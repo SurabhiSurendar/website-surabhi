@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* Style for the layout */
+        body {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        /* Style for the left section */
+        .left-section {
+            flex: 1;
+            text-align: left;
+            font-size: 2em;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        /* Style for the dropdown menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Style for the right section */
+        .right-section {
+            flex: 2;
+            margin-top: 20px;
+        }
+
+        /* Style for the section content */
+        div {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="left-section">
+        MY RESUME
+    </div>
+
+    <div class="right-section">
+        <div class="dropdown">
+            <button>Resume</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="toggleSection('education')">Education</a>
+                <a href="#" onclick="toggleSection('experience')">Work Experience</a>
+                <a href="#" onclick="toggleSection('skills')">Skills</a>
+            </div>
+        </div>
+
+        <div id="education" style="display:none;">
+            <h3>Education</h3>
+            <p><strong>North Carolina State University</strong>, Raleigh, NC <br>
+                M.S. in Engineering Management, Data Analytics Track, CGPA: 3.67/4 <br>
+                Aug 2024 - May 2026</p>
+            <p><strong>Sri Sivasubramaniya Nadar (SSN) College of Engineering</strong>, Chennai, India <br>
+                B.E. in Electrical and Electronics Engineering, CGPA: 3.55/4 <br>
+                Aug 2018 - May 2022</p>
+        </div>
+
+        <div id="experience" style="display:none;">
+            <h3>Work Experience</h3>
+            <p><strong>Citi Corp Private Limited</strong>, India <br>
+                Technology Analyst <br>
+                Jul 2022 - Jun 2024</p>
+            <ul>
+                <li>Collaborated with cross-functional teams and stakeholders to define business requirements for effective application deployments.</li>
+                <li>Spearheaded the migration of applications from Pivotal Cloud Foundry to OpenShift, reducing overall costs by 40%.</li>
+                <li>Enhanced accessibility for visually impaired users by aligning the website with ADA compliance standards, resulting in a 20% increase in user engagement.</li>
+                <li>Developed Date of Birth module for an Anti-Money Laundering (AML) project, enhancing customer screening processes by 40%.</li>
+            </ul>
+        </div>
+
+        <div id="skills" style="display:none;">
+            <h3>Skills</h3>
+            <p><strong>Data Analysis Tools:</strong> Tableau, Power BI, MATLAB</p>
+            <p><strong>Languages:</strong> Python, SQL, Java, HTML</p>
+            <p><strong>Technologies:</strong> Spring Boot, Docker, Git, BitBucket, REST APIs, LINDO, GAMS, Jenkins, PCF, OpenShift</p>
+            <p><strong>Project Management Tools:</strong> Jira, Confluence, Microsoft Project, Microsoft Excel, Visio, Agile</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(sectionId) {
+            // Hide all sections
+            document.getElementById('education').style.display = 'none';
+            document.getElementById('experience').style.display = 'none';
+            document.getElementById('skills').style.display = 'none';
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
