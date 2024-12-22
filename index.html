@@ -74,19 +74,32 @@
 
         .intro-section {
             display: flex;
+            align-items: flex-start;
             gap: 20px;
             margin: 40px auto;
             max-width: 800px;
             padding: 0 20px;
         }
 
-        .intro-section div:first-child {
-            flex: 1;
-            border-bottom: 2px solid #004a8f;
-            align-self: center;
+        .intro-label {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #004a8f;
+            gap: 10px;
+            text-transform: uppercase;
         }
 
-        .intro-section p {
+        .intro-label hr {
+            width: 50px;
+            border: none;
+            border-top: 2px solid #004a8f;
+        }
+
+        .intro-content {
             flex: 2;
             font-size: 1rem;
             line-height: 1.6;
@@ -115,17 +128,22 @@
         <img src="profile.jpg" alt="Surabhi Surendar">
         <div class="hero-content">
             <h1>Surabhi Surendar</h1>
-            <p>Hello, I am Surabhi, a graduate student pursuing a Master’s in Engineering Management with an analytics track at North Carolina State University.</p>
+            <p>Hello, I am Surabhi, currently pursuing a Master’s in Engineering Management with an analytics track at North Carolina State University.</p>
         </div>
     </header>
 
     <section class="intro-section">
-        <div></div>
-        <p>
-            With 2 years of professional experience as a Technology Analyst at Citi Corp, I led critical application deployments, improved system accessibility, and facilitated migrations to enhance cost-efficiency and security. My technical expertise includes Java, Python, SQL, Power BI, and Tableau, complemented by coursework in Project Management, Operations Research, Database Applications, and ERP systems. 
+        <div class="intro-label">
+            <hr>
+            <span>Intro</span>
+        </div>
+        <div class="intro-content">
+            <p>
+                With 2 years of professional experience as a Technology Analyst at Citi Corp, I led critical application deployments, improved system accessibility, and facilitated migrations to enhance cost-efficiency and security. My technical expertise includes Python, SQL, Power BI, and Tableau, complemented by coursework in Project Management, Operations Research, Database Applications and ERP systems. 
             <br><br>
-            Driven by the challenge of driving innovation and efficiency in products, projects, and business operations, I focus on analyzing data to uncover insights, managing cross-functional initiatives, and optimizing workflows. Let’s connect to explore how my skills can contribute to your team’s success!
-        </p>
+            Driven by the challenge of driving innovation and efficiency in products, projects and business operations, I focus on analyzing data to uncover insights, managing cross-functional initiatives and optimizing workflows. Let’s connect to explore how my skills can contribute to your team’s success!
+            </p>
+        </div>
     </section>
 
     <footer>
