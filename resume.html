@@ -81,7 +81,7 @@
         .intro-section {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
             gap: 40px;
             margin: 40px auto;
             max-width: 800px;
@@ -91,19 +91,25 @@
 
         .section {
             width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
         }
 
         .section h2 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: bold;
             color: #004a8f;
             margin-bottom: 10px;
             text-transform: uppercase;
         }
 
+        .section h2#my-resume {
+            font-size: 3rem; /* Largest size for My Resume */
+        }
+
         .section p {
-            font-size: 1rem;
-            line-height: 1.6;
+            font-size: 1.1rem;
+            line-height: 1.8;
             color: #555;
         }
 
@@ -113,10 +119,27 @@
             color: #555;
             list-style-type: none;
             padding-left: 0;
+            text-align: left;
+            margin-top: 10px;
         }
 
         .section ul li {
             margin-bottom: 10px;
+        }
+
+        /* Style for Work Experience section */
+        .work-experience ul li {
+            margin-bottom: 10px;
+        }
+
+        .work-experience ul li span {
+            font-weight: bold;
+            color: #004a8f;
+        }
+
+        .work-experience ul li p {
+            font-style: italic;
+            color: #777;
         }
 
         footer {
@@ -139,33 +162,35 @@
     </nav>
 
     <section class="intro-section">
-        <div class="section">
+        <div class="section" id="my-resume">
             <h2>My Resume</h2>
-            <p>Here you can find all the details of my education, work experience, and skills that define my professional journey.</p>
+            <p>Explore my educational background, work experience, and skills that define my professional journey.</p>
         </div>
 
         <div class="section">
             <h2>Education</h2>
-            <p>Here are the details of my academic background:</p>
+            <p>These are my academic credentials:</p>
             <ul>
-                <li>North Carolina State University, M.S. in Engineering Management, Data Analytics Track (CGPA: 3.67/4)</li>
-                <li>Sri Sivasubramaniya Nadar (SSN) College of Engineering, B.E. in Electrical and Electronics Engineering (CGPA: 3.55/4)</li>
+                <li><strong>North Carolina State University</strong>, M.S. in Engineering Management, Data Analytics Track (CGPA: 3.67/4)</li>
+                <li><strong>Sri Sivasubramaniya Nadar (SSN) College of Engineering</strong>, B.E. in Electrical and Electronics Engineering (CGPA: 3.55/4)</li>
             </ul>
         </div>
 
-        <div class="section">
+        <div class="section work-experience">
             <h2>Work Experience</h2>
-            <p>Here are the details of my professional experience:</p>
+            <p>Below are the key responsibilities and projects from my work experience:</p>
             <ul>
-                <li>Citi Corp Private Limited, Technology Analyst (Jul 2022 - Jun 2024)</li>
-            </ul>
-            <p>Key Responsibilities:</p>
-            <ul>
-                <li>Collaborated with cross-functional teams for application deployments.</li>
-                <li>Streamlined project timelines using CI/CD (Jenkins).</li>
-                <li>Spearheaded migration to OpenShift, reducing costs by 40%.</li>
-                <li>Enhanced website accessibility, increasing engagement by 20%.</li>
-                <li>Developed anti-money laundering module in Java and REST APIs.</li>
+                <li>
+                    <span>Citi Corp Private Limited</span>, Technology Analyst (Jul 2022 - Jun 2024)
+                    <p>Responsibilities:</p>
+                    <ul>
+                        <li>Collaborated with cross-functional teams to deploy applications monthly.</li>
+                        <li>Streamlined project timelines using CI/CD (Jenkins) for faster and efficient delivery.</li>
+                        <li>Spearheaded the migration of applications to OpenShift, reducing costs by 40%.</li>
+                        <li>Enhanced website accessibility, increasing user engagement by 20%.</li>
+                        <li>Developed anti-money laundering module using Java and REST APIs to secure transactions.</li>
+                    </ul>
+                </li>
             </ul>
         </div>
 
@@ -173,10 +198,10 @@
             <h2>Skills</h2>
             <p>These are the key skills I have developed over the years:</p>
             <ul>
-                <li>Data Analysis Tools: Tableau, Power BI, MATLAB</li>
-                <li>Languages: Python, SQL, Java, HTML</li>
-                <li>Technologies: Spring Boot, Docker, Git, BitBucket, REST APIs, LINDO, GAMS, Jenkins, PCF, OpenShift</li>
-                <li>Project Management Tools: Jira, Confluence, Microsoft Project, Microsoft Excel, Visio, Agile</li>
+                <li><strong>Data Analysis Tools:</strong> Tableau, Power BI, MATLAB</li>
+                <li><strong>Languages:</strong> Python, SQL, Java, HTML</li>
+                <li><strong>Technologies:</strong> Spring Boot, Docker, Git, BitBucket, REST APIs, LINDO, GAMS, Jenkins, PCF, OpenShift</li>
+                <li><strong>Project Management Tools:</strong> Jira, Confluence, Microsoft Project, Microsoft Excel, Visio, Agile</li>
             </ul>
         </div>
     </section>
