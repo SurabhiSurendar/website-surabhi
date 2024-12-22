@@ -10,12 +10,12 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #2b2b2b;
-            color: #ffffff;
+            background-color: #f4f4f9;
+            color: #333;
         }
         header {
-            background-color: #4CAF50;
-            color: #ffffff;
+            background-color: #6c5ce7;
+            color: white;
             padding: 20px;
             text-align: center;
         }
@@ -23,11 +23,11 @@
             display: flex;
             justify-content: center;
             gap: 20px;
-            background-color: #333;
+            background-color: #00cec9;
             padding: 10px 0;
         }
         nav a {
-            color: #ffffff;
+            color: white;
             text-decoration: none;
             font-weight: bold;
         }
@@ -46,92 +46,127 @@
             justify-content: center;
         }
         .project {
-            background: #3b3b3b;
-            border: 1px solid #555;
+            background: #dfe6e9;
+            border: 1px solid #6c5ce7;
             border-radius: 5px;
             padding: 10px;
             width: 300px;
             text-align: center;
         }
         footer {
-            background-color: #333;
-            color: #ffffff;
+            background-color: #6c5ce7;
+            color: white;
             text-align: center;
             padding: 10px 0;
             margin-top: 20px;
-        }
-        a.button-link {
-            display: inline-block; 
-            padding: 10px 20px; 
-            background-color: #4CAF50; 
-            color: #ffffff; 
-            text-decoration: none; 
-            border-radius: 5px; 
-            text-align: center;
-            font-size: 16px;
-            transition: background-color 0.3s;
-        }
-        a.button-link:hover {
-            background-color: #388e3c;
-        }
-        img {
-            border-radius: 50%;
-            object-fit: cover;
-        }
-        h2, h3, h4 {
-            color: #ffffff;
         }
     </style>
 </head>
 <body>
 <header>
-    <h1>Surabhi Surendar</h1>
-</header>
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects & Publications</a>
-    <a href="contact.html">Contact</a>
-</nav>
-<div class="container">
-    <section class="content">
-        <div style="text-align: center;">
-            <img src="Vim.png" height="220" width="220">
-        </div>
-        <h2>About Me</h2>
-        <p><strong>First Name:</strong> <span style="font-size: 1.5em;">SURABHI</span></p>
-        <p><strong>Last Name:</strong> <span style="font-size: 1.5em;">SURENDAR</span></p>
-    </section>
+        <h1>Surabhi Surendar</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects & Publications</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container" style="color: #333; text-align: center;">
+        <section class="content">
+            <div style="color: #333; text-align: center;">
+                <div style = "text-align: center;">
+                    <img src="Vim.png" height="220" width="220" style="border-radius: 50%; object-fit: cover;">
+                </div>
+                <!--<img src="Vim.png" align="right" height="220" width="220">-->
+                
+                <h2>About Me</h2>
+                <br>
+                <p> First Name: <h1>SURABHI</h1></p>
+                <br>
+                <p> Last Name: <h1>SURENDAR</h1></p>       
+            </div> 
+        </section>
 
-    <section class="content">
-        <h2>Education</h2>
-        <h3>Master of Science in Engineering Management</h3>
-        <div style="text-align: center;">
-            <a href="https://mem.grad.ncsu.edu/what-is-engineering-management/" class="button-link">
-                North Carolina State University
-            </a>
-        </div>
-        <p><h3>2024 - 2026</h3></p>
+        <section class="content">
+            <h2>Education</h2>
+            <br>
+            <!--<img src="gt.png" align="right" height="100" width="100">-->
+            <p><h3>2024 - 2026</h3></p>
+            <div style="text-align: center;">
+                <a  href="https://mem.grad.ncsu.edu/what-is-engineering-management/" 
+                style="
+                    display: inline-block; 
+                    padding: 10px 20px; 
+                    background-color: #0984e3; 
+                    color: white; 
+                    text-decoration: none; 
+                    border-radius: 5px; 
+                    text-align: center;
+                    font-size: 16px;
+                    transition: background-color 0.3s;"
+                onmouseover="this.style.backgroundColor='#6c5ce7';"
+                onmouseout="this.style.backgroundColor='#0984e3';">
+                    <h4>North Carolina State University</h4>
+                        
+                </a>  
+            </div>
+            <!--<h4> <a href="https://mem.grad.ncsu.edu/what-is-engineering-management/">North Carolina State Univeristy</a> &emsp; 2024 - 2026 (expected)</h4>-->
+            <br>
+            <!--<img src="ssn.png" align="right" height="100" width="100">-->
+            <p><h3>2018 - 2022</h3></p>
+            <div style="text-align: center;">
+                <a  href="https://www.ssn.edu.in/" 
+                style="
+                    display: inline-block; 
+                    padding: 10px 20px; 
+                    background-color: #0984e3; 
+                    color: white; 
+                    text-decoration: none; 
+                    border-radius: 5px; 
+                    text-align: center;
+                    font-size: 16px;
+                    transition: background-color 0.3s;"
+                onmouseover="this.style.backgroundColor='#6c5ce7';"
+                onmouseout="this.style.backgroundColor='#0984e3';">
+                    <h4>Sri Sivasubramaniya Nadar College of Engineering</h4>
+                        
+                </a>  
+            </div>
+            <!--<h4> <a href="https://www.ssn.edu.in/">Sri Sivasubramaniya Nadar College of Engineering</a> &emsp; 2018 - 2022 </h4>-->
+        </section>
 
-        <h3>Bachelor of Engineering in Electrical and Electronics Engineering</h3>
-        <div style="text-align: center;">
-            <a href="https://www.ssn.edu.in/" class="button-link">
-                Sri Sivasubramaniya Nadar College of Engineering
-            </a>
-        </div>
-        <p><h3>2018 - 2022</h3></p>
-    </section>
+        <section class="content">
+            <!--<img src="oracle.png" align="right" height="100" width="100">-->
+            <h2><u></u>Work Experience</u></h2>
+            <br>
+            <p><h3>2022 - 2024</h3></p>
+            <div style="text-align: center;">
+                <a  href="https://www.citigroup.com/global/about-us/global-presence/india" 
+                style="
+                    display: inline-block; 
+                    padding: 10px 20px; 
+                    background-color: #0984e3; 
+                    color: white; 
+                    text-decoration: none; 
+                    border-radius: 5px; 
+                    text-align: center;
+                    font-size: 16px;
+                    transition: background-color 0.3s;"
+                onmouseover="this.style.backgroundColor='#6c5ce7';"
+                onmouseout="this.style.backgroundColor='#0984e3';">
+                    <h4>Citi Corp Private Limited</h4>
+                        
+                </a>  
+            </div>
+            <!--<h4> <a href="https://www.citigroup.com/global/about-us/global-presence/india">Citi Corp Private Limited</a> &emsp; July 2022 - June 2024 </h4>-->
+        </section>
 
-    <section class="content">
-        <h2>Work Experience</h2>
-        <h3>Technology Analyst</h3>
-        <div style="text-align: center;">
-            <a href="https://www.citigroup.com/global/about-us/global-presence/india" class="button-link">
-                Citi Corp Private Limited
-            </a>
-        </div>
-        <p><h3>2022 - 2024</h3></p>
-    </section>
-</div>
+    </div>
+    
+    <!--
+    <footer class="footer">
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>-->
 </body>
 </html>
