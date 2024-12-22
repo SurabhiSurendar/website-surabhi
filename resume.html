@@ -12,6 +12,10 @@
             padding: 0;
             background-color: #f9f9f9;
             color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
         }
 
         nav {
@@ -23,6 +27,7 @@
             position: sticky;
             top: 0;
             z-index: 1000;
+            width: 100%;
         }
 
         nav a {
@@ -45,6 +50,7 @@
             align-items: center;
             flex-direction: column;
             position: relative;
+            width: 100%;
         }
 
         .hero img {
@@ -74,36 +80,43 @@
 
         .intro-section {
             display: flex;
+            flex-direction: column;
             align-items: flex-start;
-            gap: 20px;
+            gap: 40px;
             margin: 40px auto;
             max-width: 800px;
+            width: 100%;
             padding: 0 20px;
         }
 
-        .intro-label {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            font-size: 1rem;
+        .section {
+            width: 100%;
+        }
+
+        .section h2 {
+            font-size: 2rem;
             font-weight: bold;
             color: #004a8f;
-            gap: 10px;
+            margin-bottom: 10px;
             text-transform: uppercase;
         }
 
-        .intro-label hr {
-            width: 50px;
-            border: none;
-            border-top: 2px solid #004a8f;
-        }
-
-        .intro-content {
-            flex: 2;
+        .section p {
             font-size: 1rem;
             line-height: 1.6;
             color: #555;
+        }
+
+        .section ul {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .section ul li {
+            margin-bottom: 10px;
         }
 
         footer {
@@ -112,56 +125,7 @@
             text-align: center;
             padding: 10px 0;
             margin-top: 40px;
-        }
-
-        /* Dropdown Style */
-        .dropdown {
-            position: relative;
-            display: inline-block;
-            margin-top: 20px;
             width: 100%;
-        }
-
-        .dropdown button {
-            background-color: #004a8f;
-            color: white;
-            padding: 10px 20px;
-            font-size: 1rem;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            text-align: left;
-            border-radius: 5px;
-        }
-
-        .dropdown button:hover {
-            background-color: #006bb3;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 100%;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-            border-radius: 5px;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #ddd;
         }
     </style>
 </head>
@@ -175,42 +139,45 @@
     </nav>
 
     <section class="intro-section">
-        <div class="intro-label">
-            <hr>
-            <span>Resume</span>
+        <div class="section">
+            <h2>My Resume</h2>
+            <p>Here you can find all the details of my education, work experience, and skills that define my professional journey.</p>
         </div>
-        <div class="intro-content">
-            <div class="dropdown">
-                <button>Education</button>
-                <div class="dropdown-content">
-                    <a href="#">North Carolina State University, M.S. in Engineering Management, Data Analytics Track (CGPA: 3.67/4)</a>
-                    <a href="#">Sri Sivasubramaniya Nadar (SSN) College of Engineering, B.E. in Electrical and Electronics Engineering (CGPA: 3.55/4)</a>
-                </div>
-            </div>
 
-            <div class="dropdown">
-                <button>Work Experience</button>
-                <div class="dropdown-content">
-                    <a href="#">Citi Corp Private Limited, Technology Analyst (Jul 2022 - Jun 2024)</a>
-                    <ul>
-                        <li>Collaborated with cross-functional teams for application deployments</li>
-                        <li>Streamlined project timelines using CI/CD (Jenkins)</li>
-                        <li>Spearheaded migration to OpenShift, reducing costs by 40%</li>
-                        <li>Enhanced website accessibility, increasing engagement by 20%</li>
-                        <li>Developed anti-money laundering module in Java and REST APIs</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="section">
+            <h2>Education</h2>
+            <p>Here are the details of my academic background:</p>
+            <ul>
+                <li>North Carolina State University, M.S. in Engineering Management, Data Analytics Track (CGPA: 3.67/4)</li>
+                <li>Sri Sivasubramaniya Nadar (SSN) College of Engineering, B.E. in Electrical and Electronics Engineering (CGPA: 3.55/4)</li>
+            </ul>
+        </div>
 
-            <div class="dropdown">
-                <button>Skills</button>
-                <div class="dropdown-content">
-                    <a href="#">Data Analysis Tools: Tableau, Power BI, MATLAB</a>
-                    <a href="#">Languages: Python, SQL, Java, HTML</a>
-                    <a href="#">Technologies: Spring Boot, Docker, Git, BitBucket, REST APIs, LINDO, GAMS, Jenkins, PCF, OpenShift</a>
-                    <a href="#">Project Management Tools: Jira, Confluence, Microsoft Project, Microsoft Excel, Visio, Agile</a>
-                </div>
-            </div>
+        <div class="section">
+            <h2>Work Experience</h2>
+            <p>Here are the details of my professional experience:</p>
+            <ul>
+                <li>Citi Corp Private Limited, Technology Analyst (Jul 2022 - Jun 2024)</li>
+            </ul>
+            <p>Key Responsibilities:</p>
+            <ul>
+                <li>Collaborated with cross-functional teams for application deployments.</li>
+                <li>Streamlined project timelines using CI/CD (Jenkins).</li>
+                <li>Spearheaded migration to OpenShift, reducing costs by 40%.</li>
+                <li>Enhanced website accessibility, increasing engagement by 20%.</li>
+                <li>Developed anti-money laundering module in Java and REST APIs.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <p>These are the key skills I have developed over the years:</p>
+            <ul>
+                <li>Data Analysis Tools: Tableau, Power BI, MATLAB</li>
+                <li>Languages: Python, SQL, Java, HTML</li>
+                <li>Technologies: Spring Boot, Docker, Git, BitBucket, REST APIs, LINDO, GAMS, Jenkins, PCF, OpenShift</li>
+                <li>Project Management Tools: Jira, Confluence, Microsoft Project, Microsoft Excel, Visio, Agile</li>
+            </ul>
         </div>
     </section>
 
