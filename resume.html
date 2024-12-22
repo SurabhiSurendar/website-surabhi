@@ -3,37 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Surabhi's Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Style for the layout */
         body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        nav {
             display: flex;
-            justify-content: space-between;
-            padding: 20px;
+            justify-content: flex-end;
+            gap: 20px;
+            background-color: #e0e0e0;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
-        /* Style for the left section */
-        .left-section {
-            flex: 1;
-            text-align: left;
-            font-size: 2em;
+        nav a {
+            color: #0074cc;
+            text-decoration: none;
             font-weight: bold;
-            margin-top: 20px;
         }
 
-        /* Style for the dropdown menu */
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background-color: #004a8f;
+            color: white;
+            padding: 60px 20px;
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .hero img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            text-align: left;
+        }
+
+        .hero-content h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0 0 10px;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin: 20px 0;
+        }
+
+        .intro-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin: 40px auto;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .intro-label {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #004a8f;
+            gap: 10px;
+            text-transform: uppercase;
+        }
+
+        .intro-label hr {
+            width: 50px;
+            border: none;
+            border-top: 2px solid #004a8f;
+        }
+
+        .intro-content {
+            flex: 2;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        footer {
+            background-color: #f4f4f4;
+            color: #4a4a4a;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+
+        /* Dropdown Style */
         .dropdown {
             position: relative;
             display: inline-block;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .dropdown button {
+            background-color: #004a8f;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            border-radius: 5px;
+        }
+
+        .dropdown button:hover {
+            background-color: #006bb3;
         }
 
         .dropdown-content {
             display: none;
             position: absolute;
             background-color: #f9f9f9;
-            min-width: 160px;
+            min-width: 100%;
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
             z-index: 1;
+            border-radius: 5px;
         }
 
         .dropdown:hover .dropdown-content {
@@ -45,83 +157,73 @@
             padding: 12px 16px;
             text-decoration: none;
             display: block;
+            border-bottom: 1px solid #ddd;
         }
 
         .dropdown-content a:hover {
             background-color: #ddd;
         }
-
-        /* Style for the right section */
-        .right-section {
-            flex: 2;
-            margin-top: 20px;
-        }
-
-        /* Style for the section content */
-        div {
-            margin-top: 20px;
-        }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects-and-publications.html">Projects & Publications</a>
+        <a href="contact.html">Contact</a>
+        <a href="resume.html">Resume</a>
+    </nav>
 
-    <div class="left-section">
-        MY RESUME
-    </div>
+    <header class="hero">
+        <img src="profile.jpg" alt="Surabhi Surendar">
+        <div class="hero-content">
+            <h1>Surabhi Surendar</h1>
+            <p>Hello, I am Surabhi, currently pursuing a Master’s in Engineering Management with an analytics track at North Carolina State University.</p>
+        </div>
+    </header>
 
-    <div class="right-section">
-        <div class="dropdown">
-            <button>Resume</button>
-            <div class="dropdown-content">
-                <a href="#" onclick="toggleSection('education')">Education</a>
-                <a href="#" onclick="toggleSection('experience')">Work Experience</a>
-                <a href="#" onclick="toggleSection('skills')">Skills</a>
+    <section class="intro-section">
+        <div class="intro-label">
+            <hr>
+            <span>Resume</span>
+        </div>
+        <div class="intro-content">
+            <div class="dropdown">
+                <button>Education</button>
+                <div class="dropdown-content">
+                    <a href="#">North Carolina State University, M.S. in Engineering Management, Data Analytics Track (CGPA: 3.67/4)</a>
+                    <a href="#">Sri Sivasubramaniya Nadar (SSN) College of Engineering, B.E. in Electrical and Electronics Engineering (CGPA: 3.55/4)</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button>Work Experience</button>
+                <div class="dropdown-content">
+                    <a href="#">Citi Corp Private Limited, Technology Analyst (Jul 2022 - Jun 2024)</a>
+                    <ul>
+                        <li>Collaborated with cross-functional teams for application deployments</li>
+                        <li>Streamlined project timelines using CI/CD (Jenkins)</li>
+                        <li>Spearheaded migration to OpenShift, reducing costs by 40%</li>
+                        <li>Enhanced website accessibility, increasing engagement by 20%</li>
+                        <li>Developed anti-money laundering module in Java and REST APIs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button>Skills</button>
+                <div class="dropdown-content">
+                    <a href="#">Data Analysis Tools: Tableau, Power BI, MATLAB</a>
+                    <a href="#">Languages: Python, SQL, Java, HTML</a>
+                    <a href="#">Technologies: Spring Boot, Docker, Git, BitBucket, REST APIs, LINDO, GAMS, Jenkins, PCF, OpenShift</a>
+                    <a href="#">Project Management Tools: Jira, Confluence, Microsoft Project, Microsoft Excel, Visio, Agile</a>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div id="education" style="display:none;">
-            <h3>Education</h3>
-            <p><strong>North Carolina State University</strong>, Raleigh, NC <br>
-                M.S. in Engineering Management, Data Analytics Track, CGPA: 3.67/4 <br>
-                Aug 2024 - May 2026</p>
-            <p><strong>Sri Sivasubramaniya Nadar (SSN) College of Engineering</strong>, Chennai, India <br>
-                B.E. in Electrical and Electronics Engineering, CGPA: 3.55/4 <br>
-                Aug 2018 - May 2022</p>
-        </div>
-
-        <div id="experience" style="display:none;">
-            <h3>Work Experience</h3>
-            <p><strong>Citi Corp Private Limited</strong>, India <br>
-                Technology Analyst <br>
-                Jul 2022 - Jun 2024</p>
-            <ul>
-                <li>Collaborated with cross-functional teams and stakeholders to define business requirements for effective application deployments.</li>
-                <li>Spearheaded the migration of applications from Pivotal Cloud Foundry to OpenShift, reducing overall costs by 40%.</li>
-                <li>Enhanced accessibility for visually impaired users by aligning the website with ADA compliance standards, resulting in a 20% increase in user engagement.</li>
-                <li>Developed Date of Birth module for an Anti-Money Laundering (AML) project, enhancing customer screening processes by 40%.</li>
-            </ul>
-        </div>
-
-        <div id="skills" style="display:none;">
-            <h3>Skills</h3>
-            <p><strong>Data Analysis Tools:</strong> Tableau, Power BI, MATLAB</p>
-            <p><strong>Languages:</strong> Python, SQL, Java, HTML</p>
-            <p><strong>Technologies:</strong> Spring Boot, Docker, Git, BitBucket, REST APIs, LINDO, GAMS, Jenkins, PCF, OpenShift</p>
-            <p><strong>Project Management Tools:</strong> Jira, Confluence, Microsoft Project, Microsoft Excel, Visio, Agile</p>
-        </div>
-    </div>
-
-    <script>
-        function toggleSection(sectionId) {
-            // Hide all sections
-            document.getElementById('education').style.display = 'none';
-            document.getElementById('experience').style.display = 'none';
-            document.getElementById('skills').style.display = 'none';
-
-            // Show the selected section
-            document.getElementById(sectionId).style.display = 'block';
-        }
-    </script>
-
+    <footer>
+        <p>&copy; 2024 Surabhi Surendar. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
