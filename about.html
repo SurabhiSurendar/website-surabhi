@@ -1,147 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surabhi's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f5f1;
-            color: #333;
-        }
-        header {
-            background-color: #ffcad4;
-            color: #333;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            background-color: #b8e3ea;
-            padding: 10px 0;
-        }
-        nav a {
-            color: #333;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-        .projects {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        .project {
-            background: #f9ede2;
-            border: 1px solid #ffcad4;
-            border-radius: 5px;
-            padding: 10px;
-            width: 300px;
-            text-align: center;
-        }
-        footer {
-            background-color: #ffcad4;
-            color: #333;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-        a.button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #f6d6ad;
-            color: #333;
-            text-decoration: none;
-            border-radius: 5px;
-            text-align: center;
-            font-size: 16px;
-            transition: background-color 0.3s;
-        }
-        a.button:hover {
-            background-color: #b8e3ea;
-        }
-    </style>
-</head>
-<body>
-<header>
-        <h1>Surabhi Surendar</h1>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects & Publications</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <div class="container" style="color: #333; text-align: center;">
-        <section class="content">
-            <div style="color: #333; text-align: center;">
-                <div style = "text-align: center;">
-                    <img src="Vim.png" height="220" width="220" style="border-radius: 50%; object-fit: cover;">
-                </div>
-                <!--<img src="Vim.png" align="right" height="220" width="220">-->
-                
-                <h2>About Me</h2>
-                <br>
-                <p> First Name: <h1>SURABHI</h1></p>
-                <br>
-                <p> Last Name: <h1>SURENDAR</h1></p>       
-            </div> 
-        </section>
-
-        <section class="content">
-            <h2>Education</h2>
-            <br>
-            <!--<img src="gt.png" align="right" height="100" width="100">-->
-            <p><h3>2024 - 2026</h3></p>
-            <div style="text-align: center;">
-                <a href="https://mem.grad.ncsu.edu/what-is-engineering-management/" class="button">
-                    <h4>North Carolina State University</h4>
-                </a>  
-            </div>
-            <!--<h4> <a href="https://mem.grad.ncsu.edu/what-is-engineering-management/">North Carolina State Univeristy</a> &emsp; 2024 - 2026 (expected)</h4>-->
-            <br>
-            <!--<img src="ssn.png" align="right" height="100" width="100">-->
-            <p><h3>2018 - 2022</h3></p>
-            <div style="text-align: center;">
-                <a href="https://www.ssn.edu.in/" class="button">
-                    <h4>Sri Sivasubramaniya Nadar College of Engineering</h4>
-                </a>  
-            </div>
-            <!--<h4> <a href="https://www.ssn.edu.in/">Sri Sivasubramaniya Nadar College of Engineering</a> &emsp; 2018 - 2022 </h4>-->
-        </section>
-
-        <section class="content">
-            <!--<img src="oracle.png" align="right" height="100" width="100">-->
-            <h2><u></u>Work Experience</u></h2>
-            <br>
-            <p><h3>2022 - 2024</h3></p>
-            <div style="text-align: center;">
-                <a href="https://www.citigroup.com/global/about-us/global-presence/india" class="button">
-                    <h4>Citi Corp Private Limited</h4>
-                </a>  
-            </div>
-            <!--<h4> <a href="https://www.citigroup.com/global/about-us/global-presence/india">Citi Corp Private Limited</a> &emsp; July 2022 - June 2024 </h4>-->
-        </section>
-
+<section id="about" class="content" style="margin-top: 50px;">
+    <div style="border-left: 4px solid #fff; padding-left: 20px; color: #fff;">
+        <h2 style="font-size: 36px; font-weight: bold;">About Me</h2>
     </div>
-    
-    <!--
-    <footer class="footer">
-        <p>&copy; 2024 My Portfolio</p>
-    </footer>-->
-</body>
-</html>
+    <hr style="border: 1px solid #fff; margin: 20px 0;">
+
+    <div style="color: #fff;">
+        <p><strong>First Name:</strong> Surabhi</p>
+        <p><strong>Last Name:</strong> Surendar</p>
+    </div>
+
+    <div style="margin-top: 40px;">
+        <h2 style="font-size: 28px; font-weight: bold; color: #fff;">Education</h2>
+
+        <p style="color: #fff; font-size: 18px; font-weight: bold; margin: 10px 0;">2024 - 2026</p>
+        <div style="text-align: center;">
+            <a href="https://mem.grad.ncsu.edu/what-is-engineering-management/" 
+               style="color: #fff; text-decoration: none; font-size: 22px; font-weight: bold;">
+                North Carolina State University
+            </a>
+        </div>
+
+        <p style="color: #fff; font-size: 18px; font-weight: bold; margin: 30px 0 10px;">2018 - 2022</p>
+        <div style="text-align: center;">
+            <a href="https://www.ssn.edu.in/" 
+               style="color: #fff; text-decoration: none; font-size: 22px; font-weight: bold;">
+                Sri Sivasubramaniya Nadar College of Engineering
+            </a>
+        </div>
+    </div>
+
+    <div style="margin-top: 40px;">
+        <h2 style="font-size: 28px; font-weight: bold; color: #fff;">Work Experience</h2>
+
+        <p style="color: #fff; font-size: 18px; font-weight: bold; margin: 10px 0;">2022 - 2024</p>
+        <div style="text-align: center;">
+            <a href="https://www.citigroup.com/global/about-us/global-presence/india" 
+               style="color: #fff; text-decoration: none; font-size: 22px; font-weight: bold;">
+                Citi Corp Private Limited
+            </a>
+        </div>
+    </div>
+</section>
+
+
