@@ -14,6 +14,27 @@
             color: #333;
         }
 
+        .button-container {
+            display: flex;
+            justify-content: center; /* Centers the button horizontally */
+            margin-top: 20px;
+        }
+        
+        .project-button {
+            background-color: #004a8f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .project-button:hover {
+            background-color: #0074cc;
+        }
+
         nav {
             display: flex;
             justify-content: flex-end;
@@ -151,9 +172,12 @@
             <ul>
                 <li>Designed and implemented a blockchain mechanism using Python and Flask for secure energy transactions, analyzing data to drive cost reduction by 24%.</li>
                 <li>Incorporated a smart contract for energy prioritization and pricing in microgrids, enhancing resource management by 50% with Postman API for transaction requests.</li>
-                <li><a href="https://ieeexplore.ieee.org/document/10040176" target="_blank">View Project</a></li>
+                <br>
+                    <button class="project-button" onclick="window.open('https://ieeexplore.ieee.org/document/10040176', '_blank')">View Project</button>
+                
             </ul>
-        </div>
+    </div>
+
 
         <div class="section">
             <h2>Advanced Home Automation Using Raspberry Pi and Machine Learning</h2>
@@ -161,7 +185,7 @@
             <ul>
                 <li>Engineered an IoT-based home automation system with Raspberry Pi and mobile applications, working closely with stakeholders to define user requirements.</li>
                 <li>Developed 4 machine learning models to predict future load consumption based on customer behavior, achieving 99% accuracy.</li>
-                <li><a href="https://ieeexplore.ieee.org/document/9383738" target="_blank">View Project</a></li>
+                <button class="project-button" onclick="window.open("https://ieeexplore.ieee.org/document/9383738" target="_blank")>View Project</button>
             </ul>
         </div>
     </section>
