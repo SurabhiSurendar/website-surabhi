@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surabhi's Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            background-color: #e0e0e0;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #0074cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background-color: #004a8f;
+            color: white;
+            padding: 60px 40px;
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0 0 30px;
+        }
+
+        .intro-section {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin: 40px auto;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .section {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #004a8f;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .section ul {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+            list-style-type: disc;
+            padding-left: 20px;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        .section ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #f4f4f4;
+            color: #4a4a4a;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects-and-publications.html">Projects & Publications</a>
+        <a href="contact.html">Contact</a>
+        <a href="resume.html">Resume</a>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>My Projects</h1>
+        </div>
+    </header>
+
+    <section class="intro-section">
+        <div class="section">
+            <h2>NC State Store Data Management System</h2>
+            <p><strong>Aug 2024 - Dec 2024</strong></p>
+            <ul>
+                <li>Developed an MS Access-based system for NC State Store to manage and analyze sales and inventory.</li>
+                <li>Created an interactive dashboard showcasing top-selling products, category distributions, and KPIs.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Product Development Project</h2>
+            <p><strong>Aug 2024 - Dec 2024</strong></p>
+            <ul>
+                <li>Managed an All-in-One Home Entertainment Console, including design and testing using MS Project.</li>
+                <li>Ensured on-time delivery, budget planning, risk management, and prototype design.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Blockchain-Based Energy Transaction in Microgrid</h2>
+            <p><strong>Feb 2022 - Jun 2022</strong></p>
+            <ul>
+                <li>Designed and implemented a blockchain mechanism using Python and Flask for secure energy transactions, analyzing data to drive cost reduction by 24%.</li>
+                <li>Incorporated a smart contract for energy prioritization and pricing in microgrids, enhancing resource management by 50% with Postman API for transaction requests.</li>
+                <li><a href="https://ieeexplore.ieee.org/document/10040176" target="_blank">IEEE Publication</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Advanced Home Automation Using Raspberry Pi and Machine Learning</h2>
+            <p><strong>Feb 2022 - Jun 2022</strong></p>
+            <ul>
+                <li>Engineered an IoT-based home automation system with Raspberry Pi and mobile applications, working closely with stakeholders to define user requirements.</li>
+                <li>Developed 4 machine learning models to predict future load consumption based on customer behavior, achieving 99% accuracy.</li>
+                <li><a href="https://ieeexplore.ieee.org/document/9383738" target="_blank">IEEE Publication</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Surabhi Surendar. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
